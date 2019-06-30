@@ -73,51 +73,35 @@ input[type=text] {
 img .logo__desktop{
    width: 77px;
 }
-nav ul{
+nav {
+    padding: 1px 0px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.header-nav{
     width: 80%;
     margin: 25px;  
-    flex-direction: row;
-   align-items: center;
-   justify-content: center;
+    flex-direction: row; 
 }
-
-ul li{
-    list-style: none;
+.header-nav li{
     display: inline-block;
     padding: 10px;
     font-weight: 700;
-    margin-right: 10px;
     opacity: 1;
     visibility: visible;
 }
-
-header nav {
-    width: 100%;
-    padding: 14px 20px;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-top: 0px;
-}
-
-header nav li {
-    list-style: none;
-    display: inline;
-    font-weight: 700;
-    margin-right: 10px;
-    opacity: 1;
-    visibility: visible;
-}
-
-header nav li a {
-    justify-content: center;
+ .header-nav li a {
     text-decoration: none;
     cursor: pointer;
     color: #fff;
-    padding-left: 58px;
+    padding-left: 35px;
 }
-
-header nav li a:hover {
-    background: black;
+.header-nav li a:hover {
+    background: inherit;
+    color: #666;
 }
 
 .toggle{
@@ -149,22 +133,44 @@ main .contents{
     text-transform: uppercase;
     font-weight: 400;
 }
+
 .column {
     padding: 10px;
     box-sizing: border-box;
-    flex: 1;
-  }
-  #articles{
+}
+p{
+    margin: 15px 0 10px;
+    font-size: 12px;
+    color: #000;
+}
+.color-indicator{
+    display: flex;
+    min-height: 13px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    list-style: none;  
+}
+.colorIndicator__color{
+    width: 2px;
+    height: 1px;
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.ft-icon{
+    display: inline-flex;
+    list-style: none;
+}
+.articles{
     max-width: 1280px;
     margin: 40px auto 0 auto;
     display: flex;
-  }
-  #articles:after {
+}
+.articles:after {
     content: "";
     display: table;
     clear: both;
-  }
- 
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -174,10 +180,9 @@ main .contents{
 
 .text-block {
   position: absolute;
-  display: flex;
-  flex-direction: column;
+  
   margin: 40px auto 40px auto;
-  padding-left: 20px;
+  padding-left: 50px;
   bottom: 20px;
 }
 .img_outlines {
@@ -292,7 +297,7 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
 }
 .footer__container2 ul{
     margin: 40px;
-    padding: 0;
+    list-style: none;
 }
 .footerNav{
     display: flex;
@@ -309,9 +314,6 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
     margin: 0;
     font-size: 13px; 
 }
-.bose-list ul{
-    width: 80%;
-}
 .contactInfo{
     display: flex;
 }
@@ -324,6 +326,7 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
 }
 .list--noBullets{
     font-size: 13px;
+    float: right;
    
 }
 .list__listitems{
@@ -407,6 +410,7 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
 @media screen and (max-width: 768px) and (min-width: 0){
     .toggle{
         display: block;
+        padding: 0px;
     }
     ul{
         width: 100%;
@@ -438,12 +442,28 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
     }
 }
  
+@media screen and (min-width: 1280px){
+    #featureImages{
+        width: 100%;
+        
+    }
+    .text-block{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+}
 @media screen and (max-width: 768px) and (min-width: 0) {
-    #articles {
+    .display {
       width: 100%;
       display: flex;
       flex-direction: column;
       text-align: center;
+    }
+    .articles{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
   }
   @media screen and (min-width: 1280px){ 
@@ -457,5 +477,19 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
         .footer__container2 {
             display: flex;
             flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 768px) and (min-width: 0){
+        .text-block{
+            display: flex;
+            flex-direction: column;
+            width: 100%
+        }
+    }
+    @media screen and (max-width: 600px) and (min-width: 340px){
+        .footerNav{
+            display: flex;
+            flex-direction: column;
+            width: 100%
         }
     }

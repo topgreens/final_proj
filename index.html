@@ -42,7 +42,7 @@
                   <img src="./img/bose_mobile_logo.png" alt="Bose" class="logo__mobile">           
                 </div>
 
-                <ul>
+                <ul class="header-nav">
                     <li><a href="#" alt="auriculares" title="auriculares">auriculares</a></li>
                     <li><a href="#" alt="artavoces" title="artavoces">artavoces</a></li>
                     <li><a href="#" alt="historia de bose" title="historia de bose">historia de bose</a></li>
@@ -53,7 +53,7 @@
     </header>
 <!---------------------------------------------------------Main COntents------------------------------------------------->
     <main class="contents">
-    <section>
+    <section id="featureImages">
          <div class="img_outlines" >
             <img src="./img/feature.jpg" alt="headset" style="width:100%;">
 
@@ -67,7 +67,7 @@
                 <div class="text">
                     <h2><span class="richText__heading">AURICULARES QC35 II EDICIÓN LIMITADA</span><br></h2>
                 </div>
-            <div class="buttonLink">
+                <div class="buttonLink">
                  <button class="btn" alt="comprar" title="comprar"><strong>COMPRAR</strong></button>        
             </div>           
             </div>
@@ -79,14 +79,29 @@
       <h2><span class="richText__display">RECOMENDADO</span></h2>
     </div>
     
-  <ul id="articles">
+  <div class="articles">
     <div class="products1">
       <div class="ft-image">
         <img scr="#">
       </div>
         <div class="column" >
-          <h4>Altavoz Bluetooth* SoundLink color II</h4>
+          <h4>Altavoz Bluetooth® SoundLink Color II </h4>
           <p>Inalambrico, ligero, resistente al agua, hasta 8 hora de reproduccion.</p>
+        </div>
+        <div class="pref">
+          <ul class="color-indicator" title="Colores disponibles" aria-label="Colores disponibles" data-size="4">
+            <li class="colorIndicator__color" style="background-color: #009abf;"> </li> 
+            <li class="colorIndicator__color" style="background-color: #e75243;"> </li>
+            <li class="colorIndicator__color" style="background-color: #3e3e3f;"> </li>
+            <li class="colorIndicator__color" style="background-color: #c4d2d6;"></li>
+          </ul>
+        </div>
+        <div class="featureIcon">
+          <ul class="ft-icon">
+            <li class="info__iconFeatures"><img src="./img/Bluetooth.png"></li>   
+            <li class="info__iconFeatures"><img src="./img/Battery.png"></li>
+            <li class="info__iconFeatures"><img src="./img/Voice_command.png"></li>     
+          </ul>
         </div>
     </div>
 
@@ -98,6 +113,21 @@
           <h4>Auriculaares inalambricos SoundSport Free</h4>
           <p>Realmente inalambricos, resistentes al agua, 5 horas de bateria</p>
         </div>
+        <div class="pref">
+          <ul class="color-indicator" title="Colores disponibles" data-size="4">
+            <li class="colorIndicator__color" style="background-color: #009abf;"> </li> 
+            <li class="colorIndicator__color" style="background-color: #e75243;"> </li>
+            <li class="colorIndicator__color" style="background-color: #3e3e3f;"> </li>
+            <li class="colorIndicator__color" style="background-color: #c4d2d6;"></li>   
+          </ul>
+        </div>
+        <div class="featureIcon">
+          <ul class="ft-icon">
+            <li class="info__iconFeatures"><img src="./img/Bluetooth.png"></li>  
+            <li class="info__iconFeatures"><img src="./img/Battery.png"></li> 
+            <li class="info__iconFeatures"><img src="./img/Voice_command.png"></li>   
+          </ul>
+        </div>
   </div>
 
   <div class="products3">
@@ -108,21 +138,44 @@
           <h4>Auriculaares inalambricos QuietComfort 35 II</h4>
           <p>Cancelacion de ruido ajustable, asistentes por voz incorporados, hasta 20 horas de bateria</p>
         </div>
+
+        <div class="pref">
+          <ul class="color-indicator" title="Colores disponibles" data-size="3">
+            <li class="colorIndicator__color" style="background-color: #B9877B;"></li>
+            <li class="colorIndicator__color" style="background-color: #bab9b9;"> </li> 
+            <li class="colorIndicator__color" style="background-color: #000000;"> </li>
+          </ul>
+        </div>
+        <div class="featureIcon">
+          <ul class="ft-icon">
+            <li class="info__iconFeatures"><img src="./img/Bluetooth.png"></li>    
+            <li class="info__iconFeatures"><img src="./img/Battery.png"></li>   
+            <li class="info__iconFeatures"><img src="./img/Voice_command.png"></li>   
+            <li class="info__iconFeatures"><img src="./img/Noise_Cancelling.png"> </li>   
+          </ul>
+        </div>
 </div>
 
 <div class="products4">
         <div class="ft-image">
             <img scr="#">
-          </div>
+        </div>
         <div class="column" >
           <h4>Wave music system IV + SoundTouch Pedestal</h4>
           <p>Sistema de mesa para CD y radio AM/FM</p>
         </div>
+        <div class="pref">
+          <ul class="color-indicator" title="Colores disponibles" data-size="3">
+            <li class="colorIndicator__color" style="background-color: #c4d2d6;"></li> 
+            <li class="colorIndicator__color" style="background-color: #000000;"> </li>
+            <li class="colorIndicator__color" style="background-color: #3e3e3f;"> </li>
+          </ul>
+        </div>
   </div>
-</ul>         
+</div>         
 </section>
 
-<section>
+<section id="featureImages">
      <div class="homepage_panel">
         <img src="./img/feature2.jpeg" alt="headset" style="width:100%;">
       <div class="text-block">
@@ -253,7 +306,7 @@
 </div>
 </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
-    <script src="/script/main.js"></script>
+    <script src="./script/main.js"></script>
 
       
     <script type="text/javascript">
