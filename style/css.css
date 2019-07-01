@@ -28,7 +28,7 @@ body {
     box-sizing: border-box;
 }
 .infomessage {
-    padding-top: 10px;
+    padding: 10px;
     width: 100%;
     max-width: 1280px;
     margin: auto;
@@ -36,7 +36,6 @@ body {
 }
 .headerwrapper {
     background: #191919;   
-    box-sizing: border-box;
 }
 .headernavcontainer{
     float:right;
@@ -49,16 +48,15 @@ input[type=text] {
     display: flex;
     height:20px;
     margin: 10px;
-    margin-right: 100px;
+    margin-right: 50%;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 30px;
-    font-size: 12px;
+    border-radius: 50px;
     background-color: lightgray;
     background-image: url('/img/search.png');
     padding: 12px  40px;
     float:right;
-  }
+}
   
   input[type=text]:focus {
     width: 40%;
@@ -127,13 +125,13 @@ main .contents{
     width: 100%;
 }
 .text2{
-    font-size: 32px;
+    font-size: 25px;
     line-height: 38px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    font-weight: 400;
+    margin: 20px 30px;
+    font-family: sans-serif;
 }
-
 .column {
     padding: 10px;
     box-sizing: border-box;
