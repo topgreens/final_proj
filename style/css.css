@@ -81,7 +81,8 @@ nav {
 }
 .header-nav{
     width: 80%;
-    margin: 25px;  
+    margin: 2px;  
+    display: flex;
     flex-direction: row; 
 }
 .header-nav li{
@@ -124,6 +125,13 @@ main .contents{
 .display{
     width: 100%;
 }
+.text-block{
+    text-align: center;
+    padding: 50px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
 .text2{
     font-size: 25px;
     line-height: 38px;
@@ -132,10 +140,65 @@ main .contents{
     margin: 20px 30px;
     font-family: sans-serif;
 }
+.articles{
+
+}
+.products{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    box-sizing: border-box;
+}
+.ft-image :hover{
+    visibility: visible;
+        transition: transform .5s;
+        filter:  saturate(180%);
+        transform: scale(1.1);
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -ms-transition: transform .5s;
+        -o-transition: transform .5s;
+        -webkit-transform: scale(1.1);
+}
+.button {
+ 
+    border: 1px solid gray;
+    
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+     border-radius: 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.button1 {background-color: #e7e7e7; color: black;} 
+.button2 {background-color: #555555;}
+
+
+.ft-image{
+    width: 100%;
+    margin: 10px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+div.ft-image > img{
+    width: 100%;
+    height: auto;
+}
+.clearfix:after { 
+    content: "";
+    display: table;
+    clear: both;
+  }
 .column {
     padding: 10px;
     box-sizing: border-box;
 }
+div.column{
+    padding: 15px;
+    text-align: center;
+  }
 p{
     margin: 15px 0 10px;
     font-size: 12px;
@@ -491,3 +554,18 @@ a:active, .bose-lists a:link, .bose-lists a:visited {
             width: 100%
         }
     }
+
+    @media only screen and (max-width: 700px) {
+        .products {
+          width: 49.99999%;
+          margin-left: auto;
+  margin-right: auto;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .products {
+          width: 100%;
+        }
+      }
+    
