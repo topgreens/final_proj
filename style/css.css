@@ -19,7 +19,7 @@ body {
 .mnavBar {}
 
 .infoBar {
-    position: relative;
+    position: absolute;
     font-family: Gotham, Verdana, sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -42,17 +42,25 @@ body {
 .headerwrapper {
     background: #191919;
     margin: 0 auto 0 auto;
+    height: 120px;
+}
+.logo__desktop{
+    width: 70px;
+    padding-left: 25px;
+    margin-left: 25px;
+    padding-top: 2px;
 }
 nav{
     padding: 1px 0px;
-    
+    padding-top: 12px;
     margin-left: 20px;
     text-transform: uppercase;
     font-size: 12px;
     box-sizing: border-box;
 }
-.sidenav{
-
+.locatn{
+    width: 25px;
+    cursor: pointer;
 }
 
 .header__logocontainer {
@@ -65,14 +73,23 @@ visibility: hidden
 }
 
 .mg-icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    width: 40%;
+    float: right;
+    margin: 2px;
+    text-align: right;
+}
+.fa-search-location{
+    cursor: pointer;
+    transition: opacity .4s,visibility .4s;
+}
+.mg-ubicación{
+    color: lemonchiffon;
+    font-size: 9px;
+    font-family: Gotham, Verdana, sans-serif;
+    font-style: normal;
+    text-transform: lowercase;
 }
 
-.serviceBar__icon--location {
-    font-size: 12px;
-}
 input[type=text] {
     height: 22px;
     margin: 10px;
@@ -93,8 +110,15 @@ input[type=text]:hover {
 }
 .ubicación{
     float: right;
+    padding: 4px;
+    border: 1px;
+    width: 15%;
+    margin-right: 10px;
 }
-
+.header-nav{
+    display: inline-block;
+    padding-right: 20px;    
+}
 
 .header-nav li {
     display: inline-block;
@@ -144,7 +168,7 @@ main .contents {
     background-color: #fff;
 }
 
-.img_outlines>.clearfix::after {
+.img_outlines> .clearfix::after {
     content: "";
     clear: both;
     display: table;
@@ -155,13 +179,24 @@ main .contents {
 }
 
 
-.text-block {
+.text-block{
     position: absolute;
-    text-align: center;
-    margin: 40px auto 40px auto;
     padding-left: 50px;
     bottom: 20px;
     box-sizing: border-box;
+}
+.text-blocks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;*/
 }
 
 .text2 {
@@ -198,7 +233,6 @@ main .contents {
     -o-transition: transform .5s;
     -webkit-transform: scale(1.1);
 }
-
 .button {
     border: 1px solid gray;
     padding: 5px 40px;
@@ -295,45 +329,44 @@ p {
 
 .img_outlines {
     position: relative;
-    font-family: Arial;
-
+    font-family: Gotham, Verdana, sans-serif;
+    font-style: normal;
 }
 
 .homepage_panel {
     position: relative;
-    font-family: Arial;
+    font-family: Gotham, Verdana, sans-serif;
+    font-style: normal;
 }
 
 .text {
-    padding: 5px;
+    padding: 0;
+    margin: 0;
     color: #1a0000;
     letter-spacing: -1px;
+    box-sizing: border-box;
 }
+
 
 .richText__heading2 {
     font-family: Gotham, Verdana, sans-serif;
     font-style: normal;
     font-weight: 700;
-}
-
-.richText__heading2 {
+    padding-left: 40px;
     font-size: 48px;
     line-height: 48px;
+    margin-left: 40px;
 
 }
-
-.buttonLink .btn {
-    margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .buttonLink .btn {
     position: absolute;
     left: 50%;
     background-color: #f8f8f8;
     color: gray;
     font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 10px 35px;
     border: 1px solid #242424;
     cursor: pointer;
@@ -385,7 +418,6 @@ p {
 .socialPage {
     padding-left: 70px;
     margin: 25px;
-    cursor: pointer;
     font-size: 18px;
 }
 
@@ -395,10 +427,6 @@ p {
     transform: scale(1.5);
     -webkit-transition: transform .5s;
 }
-.socialMedia a:hover{
-    color: #fff;
-}
-
 a:active,
 .footer a:link,
 .footer a:visited {
@@ -415,7 +443,8 @@ a:active,
 
 .footer__container2 {
     max-width: 1280px;
-    margin: 25px;
+    margin: 0px;
+    
     background-color: inherit;
 }
 
@@ -515,6 +544,7 @@ a:active,
 }
 
 .btm-icon {
+    width: 100px;
     height: 106px;
     margin-right: 40px;
 }
@@ -522,6 +552,9 @@ a:active,
 .copyRight {
     margin: 40px auto;
     color: #fff;
+}
+.bose-footer__copyrightNote{
+    color: #818181;
 }
 
 /* .---------------------------------------------------------------------------------------------------------------------*/
